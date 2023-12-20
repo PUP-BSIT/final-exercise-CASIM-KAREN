@@ -45,6 +45,10 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    background-color: #a674d2;
+}
+
 #region_countries,
 #country_details {
     margin-top: 20px;
