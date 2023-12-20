@@ -148,3 +148,7 @@ img {
 button:hover {
     background-color: #a674d2;
 }
+
+#comment_form button:hover {
+    background-color: #a674d2;
+}
