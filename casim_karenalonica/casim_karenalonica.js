@@ -73,3 +73,27 @@ function getCurrentDate() {
         < 10 ? '0' + day : day}`;
 }
 });
+
+// JavaScript for smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetElement =document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+if (scrollToTopButton) {
+    scrollToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}

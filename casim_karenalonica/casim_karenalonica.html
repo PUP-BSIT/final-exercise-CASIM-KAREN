@@ -9,7 +9,17 @@
         <h1>Casim, Karen Alonica</h1>
     </div>
 
-    <div>
+	<ul class="navigation">
+        <li><a class="nav-link" href="#interests">Interests</a></li>
+        <li><a class="nav-link" href="#works">Works</a></li>
+        <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li><a class="nav-link" href="#journal">Journal</a></li>
+        <li><a class="nav-link" href="#my_goals">Goals</a></li>
+        <li><a class="nav-link" href="#comments_container">Comments</a></li>
+        <li><a class="nav-link" href="#gallery_section">Gallery</a></li>
+    </ul>
+	
+    <div id="interests">
         <h2>My Interests and Hobbies</h2>
         <ul>
             <li>Board Games and Puzzles</li>
@@ -28,15 +38,17 @@
         </ul>
     </div>
 
-    <div>
+    <div id="works">
         <h2>My works</h2>
         <ol>
-            <li><a href="#">Work 1</a></li>
-            <li><a href="#">Work 2</a></li>
+			<img src="countries.gif" alt="globe"><br>
+            <button id="countries_button" onclick="navigateToCountries()">
+				Go to Countries Page</button>
         </ol>
+
     </div>
 
-    <div>
+    <div id="testimonials">
         <h2>Testimonials</h2>
         <p>"She's doing her job properly. She makes herself functional all
             the time and I love it because she has this courage for her to
@@ -48,15 +60,88 @@
 		<p>"She is Beautiful". - Diana Rose Fidel</p>
     </div>
     
-    <section id="my_goals">
+	<div class="journal_container" id="journal">
+        <h2>Karen Alonica's Journal</h2>
+        <p>As the year comes to an end, I welcome you to spend a few minutes
+				reading this brief first entry in my journal. A journal laced
+				with honesty but concealing a reality too personal to discuss
+				freely. Please allow me to introduce myself: Karen Alonica.
+				Let’s start with, how I spend my childhood lifestyle that put
+				me to decide what I really want to involve myself.</p>
+		<p>Let me begin with my childhood when my passions began to influence
+				my decisions. Like any other kid, I enjoyed spending time
+				outside with other kids. But then something happened. Before
+				first grade, I found myself isolating, immersing myself in
+				household chores and the world of books. Amidst this, I
+				discovered a love for solving puzzles, especially Sudoku, and
+				developed a fascination for 'amazing' discoveries. Well, at
+				the time I am still in my elementary, so everything feels so
+				amazing.</p>
+        <p>I was frequently commended for my ability to convey my thoughts
+				and opinions while still in elementary school. While my
+				friends complained about writing, I stood out for my
+				enthusiasm to write and share my opinions and knowledge. In
+				sixth grade, I explored genres other than science and
+				mathematics, writing down every plot and scenario that
+				crossed my mind</p>
+		<p>When thinking about my future studies, my interests took a detour.
+				My mother's rejection encouraged me to consider psychology
+				when I was initially drawn to literature or mathematics.
+				This interest stemmed from my early exposure to family
+				problems, which prompted me to pay close attention to facial
+				expressions and body language. Because I was socially awkward
+				and was unable to immerse myself in events, I relied on
+				others' behaviors and narratives to comprehend feelings.</p>
+        <p>In the year before college, the onset of a pandemic disturbed the
+				normal pace of life. I felt weary after being forced to spend
+				so much time with my family, losing motivation to think
+				critically or pursue knowledge. My mother was violently
+				opposed to my interests in literature, psychology, and
+				politics. Instead, she urged me to choose a nearby university
+				for practical reasons and opt for a program with mathematics.
+				Despite the limited program options, I enrolled at PUP-Taguig
+				in Information Technology. Overcoming coding obstacles brought
+				me unexpected joy, but the initial joy of success was
+				overwhelmed by personal situations, leading to self-doubt
+				about continuing in this field. Despite my doubts, I decided
+				to carry on, inspired by a sense of obligation to my parents
+				and a deeper desire to avoid disappointment in myself. The path
+				I've chosen may be difficult, but I see it as one I must
+				accomplish.</p>
+        <p>Looking ahead, I envision myself still studying and working in
+				five years. The setbacks haven't stopped me from fantasizing
+				about a future in which I can pursue my true passions. Given
+				the challenges of our country's current job market, the
+				specifics of my future work remain unknown. Nonetheless, I
+				stay hoping for opportunities to make my dreams a reality.</p>
+        <p>All I can say is that life is full of chances, and how we take
+				advantage of them determines our level of success. I chose to
+				walk till I crossed the finish line, facing the uncertainty
+				with courage and optimism.</p>
+    </div>
+	
+    <section id="my_goals" class="goals-container">
         <h2>My Goals</h2>
-        <ul>
-            <li>Goal 1: Visit all the wonders of the world.</li>
-            <li>Goal 2: Achieve a certain level of financial security
-				and become financially independent.</li>
-            <li>Goal 3: Improve my communication and interpersonal
-				abilities to overcome self-doubt.</li>
-        </ul>
+		<li>
+            <div class="goal_item">
+                <img src="world.jpg" alt="Goal 1">
+                <p>Goal 1: Visit all the wonders of the world.</p>
+            </div>
+		</li>
+		<li>
+            <div class="goal_item">
+                <img src="financial.jpg" alt="Goal 2">
+                <p>Goal 2: Achieve a certain level of financial security and
+					become financially independent.</p>
+            </div>
+        </li>
+        <li>
+            <div class="goal_item">
+                <img src="path.jpg" alt="Goal 3">
+                <p>Goal 3: Continue on the path I've chosen until I reach the
+					finish line.</p>
+            </div>
+        </li>
     </section>
     
     <label for="sort">Sort by:</label>
@@ -100,19 +185,15 @@
         <button id="comment_button">Comment</button>
     </div>
 	
-	<button id="countries_button" onclick="navigateToCountries()">
-		Go to Countries Page</button>
+    <div class="gallery_container" id="gallery_section">
+		<h2>Gallery</h2>
+			<img class="gallery_image" src="image1.jpeg" alt="image1">
+			<img class="gallery_image" src="image2.jpeg" alt="image2">
+			<img class="gallery_image" src="image3.jpeg" alt="image3">
+			<img class="gallery_image" src="image4.jpeg" alt="image4">
+			<img class="gallery_image" src="image5.jpeg" alt="image5">
+	</div>
 
-    <div>
-        <h2> Gallery </h2>
-        <img src="./images/image1.jpg" alt="Image of American-Indian War">
-        <img src="./images/image2.jpg" alt="Image of Egyptian Gods
-			and Goddesses">
-        <img src="./images/image3.jpg" alt="Image of Greek Gods
-			and Goddesses">
-        <img src="./images/image4.jpg" alt="Image of a Berserker">
-        <img src="./images/image5.jpg" alt="Image of a Legionary">
-    </div>
 
     <script src="casim_karenalonica.js"></script>
 </body>

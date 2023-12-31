@@ -1,43 +1,110 @@
 body {
-    background-color: #cbc3e3;
+    background: url('sakura.jpg') no-repeat center center fixed;
+	background-size: cover;
     font-family: Arial, sans-serif;
-    margin: 0;
+   	color: #fd6a02; 
+    font-size: 20px;
     padding: 0;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.navigation {
+	background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	margin-top: 50px;
+    overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+.navigation:hover {
+    transform: scale(1.1);
+}	
+
+
+.navigation li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav-link {
+    display: block;
+    color: #eb9605;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #f79862;
+    color: #987554;
+	border-radius: 20px;
+}
+
+.navigation + * {
+    margin-top: 50px;
 }
 
 div {
+	background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 3px solid #301934;
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	transition: transform 0.3s ease;
 }
 
-section {
+div:hover {
+    transform: scale(1.1);
+}	
+
+#my_goals {
+	background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid #301934;
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#my_goals ul {
+    list-style: none;
+    padding: 0;
+}
+
+#my_goals li {
+    list-style: none;
+    margin-bottom: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.goal_item p {
+    margin-top: 25px;
+	color: #f79862; 
 }
 
 h1 {
     font-size: 40px;
     font-weight: bold;
+	color: #fd6a02; 
 }
 
 h2 {
     font-size: 30px;
     font-weight: bold;
     margin: 10px 0;
+	color: #fd6a02; 
 }
 
 ul {
@@ -48,10 +115,12 @@ ul {
 li {
     font-weight: bold;
     margin: 10px 0;
+	color: #eb9605; 
 }
 
 li p {
     font-weight: normal;
+	color: #f79862; 
 }
 
 ol {
@@ -66,6 +135,7 @@ ol li a {
 
 p {
     font-style: italic;
+	color: #f79862; 
 }
 
 button {
@@ -74,7 +144,7 @@ button {
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
-    background-color: #7851a9;
+    background-color: #f79862;
     color: black;
     border: none; 
     border-radius: 5px;
@@ -83,13 +153,15 @@ button {
 #sort, 
 #asc,
 #desc {
-    background-color: #7851a9;
+    background-color: #f79862;
     color: black;
     font-weight: bold;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 #comments-container,
@@ -108,6 +180,7 @@ button {
 #comment_form label,
 #comment_form input,
 #comment_form textarea {
+	color: #eb9605; 
     display: block;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -124,7 +197,7 @@ button {
 }
 
 #comment_form button {
-    background-color: #7851a9;
+    background-color: #f79862;
     color: black;
     font-weight: bold;
     border: none;
@@ -134,21 +207,72 @@ button {
 	width: 25%;
 }
 
-h2 + img {
-    margin: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
 img {
-    max-width: 100%;
-    height: auto;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-button:hover {
-    background-color: #a674d2;
+img:hover {
+    transform: scale(1.1);
 }
 
+button:hover,
 #comment_form button:hover {
-    background-color: #a674d2;
+    background-color: #f05e23;
+}
+
+.journal_container {
+	background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.journal_container p {
+	text-align: justify;
+	line-height: 1.5;
+	color: #f79862; 
+}
+
+.gallery_container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery_image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+.gallery_image:hover {
+    border-color: #666;
+	transform: scale(2); 
 }
